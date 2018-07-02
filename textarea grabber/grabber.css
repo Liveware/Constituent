@@ -1,0 +1,29 @@
+.grabber{
+	position:relative;
+}
+
+.grabber > textarea {
+	width:100%;
+	min-height:200px;
+}
+
+.grabber::after {
+	position: absolute;
+	
+	content: ":::::::";
+	text-align:center;
+	font-size: 9px;
+	line-height: 14px;
+	background-color: #eae8e8;
+	
+	width: 100%;
+	border:1px solid #ddd;
+	margin-top:-1px;
+		
+	cursor:n-resize;
+	
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
